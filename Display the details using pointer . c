@@ -10,12 +10,14 @@
 
 int main() {
   struct student s = {"Cherish" , 117 , "CSE CORE" , 9.4);
-  printf(" --- student details --- \n");
-  printf("Name : %s\n" , s.name);
-  printf("Branch : %s\n" , s.branch);
-  printf("Roll Number : %d\n" , s.rollnumber);
-  printf("CGPA : %.2f\n" ,s.cgpa);
-  return 0;
+struct student*ptr =&s;
+printf(" --- students details(using pointers) --- ");
+printf(" Name : %s\n" , ptr->name);
+printf(" Branch : %s\n" , ptr->branch);
+printf(" RollNumber : %d\n" ,ptr->rollnumber);
+printf("Cgpa: %.2f \n", ptr-> cgpa);
+return 0;
+ 
 }
 
   
