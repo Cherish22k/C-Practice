@@ -1,0 +1,22 @@
+""" code """
+
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {10, 45, 23, 67, 12};
+    int *ptr;
+    int i, max;
+
+    ptr = arr;        // pointer points to first element
+    max = *ptr;       // assume first element is largest
+
+    for(i = 1; i < 5; i++) {
+        if(*(ptr + i) > max) {
+            max = *(ptr + i);
+        }
+    }
+
+    printf("Largest element = %d\n", max);
+
+    return 0;
+}
