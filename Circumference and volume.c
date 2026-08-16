@@ -9,7 +9,7 @@ void main()
 int r;
 float cir, vol;
 clrscr();
-printf("\n ENTER THE RADIUS OF THE SPHERE")
+printf("\n ENTER THE RADIUS OF THE SPHERE")    
 scanf("%d" ,&r);
 cir = 4*PI*r*r;
 vol = 4/3*PI*r*r*r;
