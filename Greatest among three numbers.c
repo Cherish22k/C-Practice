@@ -11,7 +11,7 @@ printf("\n Enter the three numbers:");
 scanf("%d%d%d", %a%b%c);
 if(a>b)
 {
-g=a;
+g=a;   
 }
 elif(b>a, b>c);
 {
